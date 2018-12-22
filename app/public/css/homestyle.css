@@ -1,0 +1,19 @@
+body {
+    background-image: url("../images/shopWallpaper.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.jumbotron {
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 20px;
+    background-color: black;
+    color: #ffffff;
+}
+
+.btnContainer {
+    text-align: center;
+    margin-top: 10px;
+}
