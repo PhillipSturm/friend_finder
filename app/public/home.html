@@ -7,19 +7,40 @@
     <title>Cat Finder</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/homestyle.css">
 </head>
 <body>
+        <style>
+                body {
+    background-image: url("https://i.pinimg.com/originals/62/5c/59/625c59ec64ff51f7c4901109a925eb1d.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.jumbotron {
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 20px;
+    background-color: black;
+    color: #ffffff;
+}
+
+.btnContainer {
+    text-align: center;
+    margin-top: 10px;
+}
+</style>
         <div class="jumbotron">
                 <h1 class="display-4"><i class="fas fa-cat"></i> Cat Matcher</h1>
                 <p class="lead">Using our complex algorithms, we will discover which cat you are!</p>
                 <hr class="my-4">
                 <p>Answer our short survey and see your match</p>
-                <a class="btn btn-primary btn-lg" href="/app/public/survey.html" role="button"><i class="fas fa-address-card"></i> Take the survey</a>
+                <a class="btn btn-primary btn-lg" href="/survey" role="button"><i class="fas fa-address-card"></i> Take the survey</a>
         </div>
      <div class="btnContainer">
-        <button type="button" class="btn btn-dark"><i class="fas fa-list-alt"></i> API Friends List</button>
-        <button type="button" class="btn btn-dark"><i class="fab fa-github-square"></i> GitHub Repo</button>
+        <a class="btn btn-dark" href="/cats" role="button"><i class="fas fa-address-card"></i> API Cats List</a>
+        <a class="btn btn-dark" href="https://github.com/PhillipSturm/friend_finder" role="button"><i class="fas fa-address-card"></i> GitHub</a>
+        
       </div>  
 </body>
 </html>
