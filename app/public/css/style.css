@@ -1,0 +1,14 @@
+.homepage {
+    background-image: url("../images/goldBackground.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.jumbotron {
+    width: 80%;
+    margin: auto;
+    /* background-color: #111111; */
+    /* opacity: .8; */
+    color: #ffffff;
+}
