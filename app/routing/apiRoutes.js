@@ -1,6 +1,9 @@
+// Setting up my neccisary modules // 
 var mysql = require("mysql");
 var path = require("path");
 var catsArray = require("../data/cats.js");
+
+// Sending data //
 
 module.exports = function (app) {
 var connection;
@@ -17,6 +20,7 @@ var connection = mysql.createConnection({
 });
 }
 
+    // If connected //
 connection.connect(function (err) {
   if (err) {
       console.error("error connecting: " + err.stack);
@@ -25,6 +29,8 @@ connection.connect(function (err) {
   console.log("connected as id " + connection.threadId);
 });
 
+    
+    // Method to split up data from the MySQL into an array of strings //
 app.get("/api/friends", function (req, res) {
   connection.query("SELECT * FROM profiles", function (err, result) {
       if (err) throw err;
@@ -37,7 +43,7 @@ app.get("/api/friends", function (req, res) {
   });
 
 });
-
+// Sending data to database //
   app.post("/api/friends", function (req, res) {
 
   var scores = req.body.scores.toString();
