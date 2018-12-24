@@ -23,5 +23,11 @@ connection.connect(function(err) {
 if (err) {
   console.error("error connecting: " + err.stack);
 }
-  });
+});
+
+function loadCats() {
+  connection.query("SELECT * FROM profiles", function (err, res) {
+    var data
+  }); 
+}
 
